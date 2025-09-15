@@ -21,7 +21,7 @@ A prompt for generating and analyzing images with a specific photographic style.
 To generate an image with an ethereal, vintage, and cinematic feel.
 
 *OutputExample: Gemini 2.5 Flash Image Preview (Google Nano Banana)*
-![Uploading image.png…]()
+<img width="1024" height="1024" alt="Preview" src="hhttps://res.cloudinary.com/dporqrc5z/image/upload/v1757923505/download_poxdzo.png" />
 
 **What to provide:**
 * A brief description of the image + the JSON prompt.
