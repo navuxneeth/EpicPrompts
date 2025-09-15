@@ -57,6 +57,17 @@ A meta-instruction prompt to set the execution policy for a large-scale task.
 [Access Folder](./SetExecutionPolicy/)
 </details>
 
+<details>
+<summary><b>RepositoryDocumentation -text</b></summary>
+
+A prompt to generate documentation for a code repository.
+
+**When to use:**
+* To automatically generate a `README.md` and `LICENSE` file for your repository based on its content.
+
+[Access Folder](./RepositoryDocumentation/)
+</details>
+
 ### Compatibility
 
 These prompts are designed for high-token count, multimodal models (default Temperature etc. settings) released after **June 2025**, such as:
@@ -73,7 +84,9 @@ Here is an overview of the current project structure:
 ```
 .
 ├── EtherealVintageBloom
-│   ├── EVBwRL_V1.json
+│   └── EVBwRL_V1.json
+├── RepositoryDocumentation
+│   └── RD.json
 ├── SequentialAudioTranscription
 │   └── SAT_V1.json
 └── SetExecutionPolicy
