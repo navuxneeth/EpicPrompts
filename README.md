@@ -72,14 +72,12 @@ Here is an overview of the current project structure:
 
 ```
 .
-├── .gitattributes
 ├── EtherealVintageBloom
 │   ├── EVBwRL_V1.json
-├── README.md
 ├── SequentialAudioTranscription
 │   └── SAT_V1.json
 └── SetExecutionPolicy
-    └── SEP.json
+    └── SEP_V1.json
 ```
 
 ## License
