@@ -86,7 +86,8 @@ Here is an overview of the current project structure:
 ├── EtherealVintageBloom
 │   └── EVBwRL_V1.json
 ├── RepositoryDocumentation
-│   └── RD.json
+│   ├── makeReadme_V1.json
+│   └── syncReadme_V1.json
 ├── SequentialAudioTranscription
 │   └── SAT_V1.json
 └── SetExecutionPolicy
