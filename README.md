@@ -19,6 +19,8 @@ These prompts are designed for high-token count, multimodal models (default Temp
 * OpenAI's ChatGPT (GPT-5 and subsequent high-token models)
 * Other similar advanced consumer-scale multimodal Generative AI tools
 
+UNLESS: The model name is specifically mentioned in the directory name ("modelName" + "_" + "directoryName")  
+
 ## File Structure
 
 Here is an overview of the current project structure:
