@@ -14,7 +14,7 @@ We welcome collaboration and contributions! If you have a powerful prompt you'd 
 
 ### Compatibility
 
-These prompts are designed for high-token count, multimodal models released after **June 2025**, such as:
+These prompts are designed for high-token count, multimodal models (default Temperature etc. settings) released after **June 2025**, such as:
 * Google DeepMind's Gemini 2.5 Pro (and subsequent versions)
 * OpenAI's ChatGPT (GPT-5 and subsequent high-token models)
 * Other similar advanced consumer-scale multimodal Generative AI tools
