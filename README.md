@@ -75,24 +75,27 @@ These prompts are designed for high-token count, multimodal models (default Temp
 * OpenAI's ChatGPT (GPT-5 and subsequent high-token models)
 * Other similar advanced consumer-scale multimodal Generative AI tools
 
-UNLESS: The model name is specifically mentioned in the directory name ("modelName" + "_" + "directoryName")  
+UNLESS: The model name is specifically mentioned in the directory name ("modelName" + "_" + "directoryName")
 
 ## File Structure
 
 Here is an overview of the current project structure:
-
-```
+````
 .
+├── .gitattributes
 ├── EtherealVintageBloom
-│   └── EVBwRL_V1.json
+│   └── EVB_V1.json
+├── LICENSE
+├── README.md
 ├── RepositoryDocumentation
 │   ├── makeReadme_V1.json
-│   └── syncReadme_V1.json
+│   ├── syncReadme_V1.json
+│   └── syncReadme_V2
 ├── SequentialAudioTranscription
 │   └── SAT_V1.json
 └── SetExecutionPolicy
-    └── SEP_V1.json
-```
+└── SEP_V1.json
+````
 
 ## License
 
