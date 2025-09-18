@@ -1,6 +1,13 @@
 # EpicPrompts
 
-Welcome to **EpicPrompts**, a curated and regularly updated collection of brilliant, high-quality prompts for various use cases. These prompts are designed as JSON files to be used with powerful, general-purpose consumer multimodal generative AI tools.
+These prompts are designed as JSON files to be used with powerful, general-purpose consumer multimodal generative AI tools.
+
+### Compatibility
+
+These prompts are designed for high-token count, multimodal models (default Temperature etc. settings) released after **June 2025**, such as:
+* Google DeepMind's Gemini 2.5 Pro (and subsequent versions)
+* OpenAI's ChatGPT (GPT-5 and subsequent high-token models)
+* Other similar advanced consumer-scale multimodal Generative AI tools
 
 Created by [Navaneeth Sankar K P](https://www.linkedin.com/in/navaneeth-sankar-k-p).
 
@@ -68,31 +75,28 @@ A prompt to generate documentation for a code repository.
 [Access Folder](./RepositoryDocumentation/)
 </details>
 
-### Compatibility
 
-These prompts are designed for high-token count, multimodal models (default Temperature etc. settings) released after **June 2025**, such as:
-* Google DeepMind's Gemini 2.5 Pro (and subsequent versions)
-* OpenAI's ChatGPT (GPT-5 and subsequent high-token models)
-* Other similar advanced consumer-scale multimodal Generative AI tools
-
-UNLESS: The model name is specifically mentioned in the directory name ("modelName" + "_" + "directoryName")  
+UNLESS: The model name is specifically mentioned in the directory name ("modelName" + "_" + "directoryName")
 
 ## File Structure
 
 Here is an overview of the current project structure:
-
-```
+````
 .
+├── .gitattributes
 ├── EtherealVintageBloom
-│   └── EVBwRL_V1.json
+│   └── EVB_V1.json
+├── LICENSE
+├── README.md
 ├── RepositoryDocumentation
 │   ├── makeReadme_V1.json
-│   └── syncReadme_V1.json
+│   ├── syncReadme_V1.json
+│   └── syncReadme_V2
 ├── SequentialAudioTranscription
 │   └── SAT_V1.json
 └── SetExecutionPolicy
-    └── SEP_V1.json
-```
+└── SEP_V1.json
+````
 
 ## License
 

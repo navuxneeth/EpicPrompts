@@ -95,3 +95,40 @@
     ]
   }
 }
+{
+  "task": "ComprehensiveReadmeSynchronization",
+  "objective": "To perform a deep and thorough analysis of a code repository and its existing README.md, and then to output the complete, updated raw source code for the README.md file.",
+  "parameters": {
+    "analysis_depth": "exhaustive",
+    "instruction": "Analyze all aspects of the repository (structure, dependencies, code logic, setup scripts) to ensure the README is fully synchronized."
+  },
+  "source": {
+    "type": "code_repository",
+    "components_to_analyze": [
+      "file_and_directory_structure",
+      "content_of_all_source_code_files",
+      "dependency_manifest_files",
+      "build_and_setup_scripts",
+      "existing_readme.md"
+    ]
+  },
+  "processing_logic": {
+    "action": "Multi-LayeredDifferentialAnalysis",
+    "description": "Identify all discrepancies between the repository's current state and its documentation across structural, dependency, instructional, and functional layers."
+  },
+  "modification_rules": {
+    "primary_directive": "PreserveAndEnhance",
+    "description": "Update the README by surgically integrating changes while strictly maintaining the original document's structure, flow, and style."
+  },
+  "output_specification": {
+    "file_name": "README.md",
+    "content_type": "markdown",
+    "delivery_format": "raw_source_code",
+    "description": "The final output should be the full text content of the updated .md file, including all necessary markdown syntax like '##', '```', '-', '*', etc."
+  },
+  "global_output_directives": {
+    "response_wrapper": "none",
+    "allow_prose_or_explanation": false,
+    "rule": "The entire body of the response must be the raw markdown code itself. Do not include any introductory or concluding text, conversational fillers, or any form of explanation. The response must start with the first character of the markdown file (e.g., '#') and end with the last character."
+  }
+}
