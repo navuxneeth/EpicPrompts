@@ -67,14 +67,18 @@ A meta-instruction prompt to set the execution policy for a large-scale task.
 <details>
 <summary><b>RepositoryDocumentation -text</b></summary>
 
-A prompt to generate documentation for a code repository.
+A collection of prompts to generate and maintain documentation for a code repository.
 
 **When to use:**
-* To automatically generate a `README.md` and `LICENSE` file for your repository based on its content.
+* To automatically generate or update a `README.md` and `LICENSE` file for your repository based on its content.
+
+**Versions:**
+* **`makeReadme_V1.json`**: Use this to generate a brand new `README.md` and `LICENSE` from scratch by analyzing the repository's content.
+* **`syncReadme_V1.json`**: Use this for a basic update. It checks for new or deleted files and updates the file structure in the `README.md`.
+* **`syncReadme_V2` / `syncReadme_V2.json`**: Use this for a comprehensive update. It performs a deep analysis of code, dependencies, and build scripts to ensure every part of the `README.md` is perfectly synchronized with the repository's current state.
 
 [Access Folder](./RepositoryDocumentation/)
 </details>
-
 
 UNLESS: The model name is specifically mentioned in the directory name ("modelName" + "_" + "directoryName")
 
@@ -91,13 +95,14 @@ Here is an overview of the current project structure:
 ├── RepositoryDocumentation
 │   ├── makeReadme_V1.json
 │   ├── syncReadme_V1.json
-│   └── syncReadme_V2
+│   ├── syncReadme_V2
+│   └── syncReadme_V2.json
 ├── SequentialAudioTranscription
 │   └── SAT_V1.json
-└── SetExecutionPolicy
-└── SEP_V1.json
+├── SetExecutionPolicy
+│   └── SEP_V1.json
+└── syncReadme_V2.json
 ````
-
 ## License
 
 This project is licensed under the MIT License. See the `LICENSE` file for more details.
