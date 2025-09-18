@@ -9,8 +9,6 @@ These prompts are designed for high-token count, multimodal models (default Temp
 * OpenAI's ChatGPT (GPT-5 and subsequent high-token models)
 * Other similar advanced consumer-scale multimodal Generative AI tools
 
-Created by [Navaneeth Sankar K P](https://www.linkedin.com/in/navaneeth-sankar-k-p).
-
 ## About The Project
 
 This repository is a work-in-progress, containing a collection of meticulously crafted prompts that have been tested and found to work beautifully. The goal is to provide a resource for anyone looking to leverage the full potential of advanced Generative AI models for creative and technical tasks.
@@ -86,7 +84,6 @@ UNLESS: The model name is specifically mentioned in the directory name ("modelNa
 
 Here is an overview of the current project structure:
 ````
-.
 ├── .gitattributes
 ├── EtherealVintageBloom
 │   └── EVB_V1.json
@@ -101,8 +98,8 @@ Here is an overview of the current project structure:
 │   └── SAT_V1.json
 ├── SetExecutionPolicy
 │   └── SEP_V1.json
-└── syncReadme_V2.json
 ````
 ## License
 
 This project is licensed under the MIT License. See the `LICENSE` file for more details.
+Created by [Navaneeth Sankar K P](https://www.linkedin.com/in/navaneeth-sankar-k-p).
