@@ -41,7 +41,7 @@
         },
         {
           "type": "new_subcategories",
-          "description": "New subcategories have been added and need to be documented."
+          "description": "New subcategories have been added and need to be documented and explained."
         }
       ]
     }
@@ -82,15 +82,15 @@
     "file_name": "README.md",
     "format": "markdown",
     "content_type": "updated_file_content",
-    "delivery_format": "raw_markdown_code",
+    "delivery_format": "raw_markdown_code_and_summary_table",
     "supplementary_information": [
       {
         "type": "summary_table",
-        "description": "A brief table summarizing the changes made to the README."
+        "description": "A brief table summarizing the changes made to the README, provided as separate markdown content."
       },
       {
         "type": "project_structure_tree_in_comments",
-        "description": "The updated project structure tree enclosed in ``` comments."
+        "description": "The updated project structure tree enclosed in ``` comments, and integrated directly into the updated README.md file content."
       }
     ]
   }
