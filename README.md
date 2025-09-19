@@ -92,7 +92,6 @@ Here is an overview of the current project structure:
 ├── RepositoryDocumentation
 │   ├── makeReadme_V1.json
 │   ├── syncReadme_V1.json
-│   ├── syncReadme_V2
 │   └── syncReadme_V2.json
 ├── SequentialAudioTranscription
 │   └── SAT_V1.json
