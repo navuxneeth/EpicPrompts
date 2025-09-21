@@ -1,6 +1,6 @@
 # EpicPrompts
 
-These prompts are designed as JSON files to be used with powerful, general-purpose consumer multimodal generative AI tools.
+These prompts are designed as JSON (and currently adding YAML)files to be used with powerful, general-purpose consumer multimodal generative AI tools.
 
 ### Compatibility
 
