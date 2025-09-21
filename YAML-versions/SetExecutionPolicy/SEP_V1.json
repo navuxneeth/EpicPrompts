@@ -1,0 +1,32 @@
+{
+  "intent": "SetExecutionPolicy",
+  "scope": "Applies to the large-scale task to be defined in the subsequent part of this prompt or conversation.",
+  "user_rationale": "The user has specified a preference for a single-prompt execution to avoid the increased resource and time intensity associated with breaking the task into multiple prompts.",
+  "directives": {
+    "pacing_and_priority": {
+      "priority": "quality_over_speed",
+      "instruction": "Take as much time as needed for processing.",
+      "emphasis_level": "high",
+      "notes": "User repeated 'take your time' for emphasis."
+    },
+    "cognitive_requirements": {
+      "comprehension_depth": "exhaustive",
+      "instruction": "Fully understand all provided information and its nuances.",
+      "context_management": {
+        "policy": "persistent",
+        "scope": "entire_task_context",
+        "instruction": "Maintain full awareness of all information throughout the process."
+      }
+    },
+    "integrity_constraints": {
+      "accuracy_standard": "research_grade",
+      "hallucination_policy": "strictly_prohibited",
+      "notes": "The high accuracy requirement is linked to the stated purpose of research."
+    }
+  },
+  "metadata": {
+    "prompt_type": "meta_instruction",
+    "purpose_of_task": "Academic Research",
+    "user_acknowledgement": "User understands the request is significant ('a very big thing to ask')."
+  }
+}

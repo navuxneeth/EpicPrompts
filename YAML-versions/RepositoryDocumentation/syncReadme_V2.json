@@ -1,0 +1,134 @@
+{
+  "task": "SynchronizeReadmeWithRepository",
+  "objective": "To analyze a code repository, compare its current state against its existing README.md file, and perform surgical updates to the README to reflect any changes, ensuring the documentation is perfectly aligned with the project's actual contents.",
+  "source": {
+    "type": "code_repository",
+    "components_to_analyze": [
+      {
+        "item": "all_files_and_directories",
+        "purpose": "To create a current and accurate map of the project's structure."
+      },
+      {
+        "item": "existing_readme.md",
+        "purpose": "To understand the current documentation's structure, style, flow, and content."
+      }
+    ]
+  },
+  "processing_logic": {
+    "step_1_analysis": {
+      "action": "FullRepositoryScan",
+      "output": "A complete, current file tree and list of all project components."
+    },
+    "step_2_analysis": {
+      "action": "ReadmeDeconstruction",
+      "output": "A structured map of the README's sections, content, and stylistic patterns, specifically noting how files and directories are currently documented."
+    },
+    "step_3_comparison": {
+      "action": "DifferentialAnalysis",
+      "description": "Compare the output of Step 1 with the map from Step 2 to identify all discrepancies.",
+      "discrepancies_to_detect": [
+        {
+          "type": "new_entity",
+          "description": "Files or directories present in the repository but not mentioned in the README."
+        },
+        {
+          "type": "deleted_entity",
+          "description": "Files or directories mentioned in the README that no longer exist in the repository."
+        },
+        {
+          "type": "structural_mismatch",
+          "description": "The project structure described in the README (e.g., in a file tree) does not match the actual structure."
+        },
+        {
+          "type": "new_subcategories",
+          "description": "New subcategories have been added and need to be documented and explained."
+        }
+      ]
+    }
+  },
+  "modification_rules": {
+    "primary_directive": "PreserveOriginalIntegrity",
+    "description": "The goal is to update, not to rewrite. All changes must be minimal, precise, and consistent with the existing document.",
+    "constraints": [
+      {
+        "type": "structural_immutability",
+        "rule": "Do not change the order of sections, headings, or the overall flow of the document."
+      },
+      {
+        "type": "stylistic_consistency",
+        "rule": "All new content must mimic the existing tone, language, and formatting (e.g., markdown syntax, code block style, linking conventions)."
+      }
+    ],
+    "update_actions": [
+      {
+        "trigger": "on_new_entity_detected",
+        "action": "Integrate documentation for the new entity by following the established pattern for similar files in the README."
+      },
+      {
+        "trigger": "on_deleted_entity_detected",
+        "action": "Surgically remove all references to the non-existent entity from the README without leaving artifacts or broken formatting."
+      },
+      {
+        "trigger": "on_structural_mismatch_detected",
+        "action": "Update the specific part of the README that depicts the project structure (e.g., the file tree) to match the current state."
+      },
+      {
+        "trigger": "on_new_subcategories_detected",
+        "action": "Add the new subcategories and a brief explanation to the relevant section, ensuring consistency in language and structure."
+      }
+    ]
+  },
+  "output": {
+    "file_name": "README.md",
+    "format": "markdown",
+    "content_type": "updated_file_content",
+    "delivery_format": "raw_markdown_code_and_summary_table",
+    "supplementary_information": [
+      {
+        "type": "summary_table",
+        "description": "A brief table summarizing the changes made to the README, provided as separate markdown content."
+      },
+      {
+        "type": "project_structure_tree_in_comments",
+        "description": "The updated project structure tree enclosed in ``` comments, and integrated directly into the updated README.md file content."
+      }
+    ]
+  }
+}
+{
+  "task": "ComprehensiveReadmeSynchronization",
+  "objective": "To perform a deep and thorough analysis of a code repository and its existing README.md, and then to output the complete, updated raw source code for the README.md file.",
+  "parameters": {
+    "analysis_depth": "exhaustive",
+    "instruction": "Analyze all aspects of the repository (structure, dependencies, code logic, setup scripts) to ensure the README is fully synchronized."
+  },
+  "source": {
+    "type": "code_repository",
+    "components_to_analyze": [
+      "file_and_directory_structure",
+      "content_of_all_source_code_files",
+      "dependency_manifest_files",
+      "build_and_setup_scripts",
+      "existing_readme.md"
+    ]
+  },
+  "processing_logic": {
+    "action": "Multi-LayeredDifferentialAnalysis",
+    "description": "Identify all discrepancies between the repository's current state and its documentation across structural, dependency, instructional, and functional layers."
+  },
+  "modification_rules": {
+    "primary_directive": "PreserveAndEnhance",
+    "description": "Update the README by surgically integrating changes while strictly maintaining the original document's structure, flow, and style."
+  },
+  "output_specification": {
+    "file_name": "README.md",
+    "content_type": "markdown",
+    "delivery_format": "raw_source_code",
+    "description": "The final output should be the full text content of the updated .md file, including all necessary markdown syntax like '##', '```', '-', '*', etc."
+  },
+  "global_output_directives": {
+    "response_wrapper": "none",
+    "allow_prose_or_explanation": false,
+    "rule": "The entire body of the response must be the raw markdown code itself. Do not include any introductory or concluding text, conversational fillers, or any form of explanation. The response must start with the first character of the markdown file (e.g., '#') and end with the last character."
+  }
+}
