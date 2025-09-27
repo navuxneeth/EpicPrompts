@@ -1,0 +1,54 @@
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+
+# Cache
+__pycache__/
+*.pyc
+*.pyo
+.cache/
+.pytest_cache/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Virtual environments
+venv/
+env/
+.env
+
+# Node modules (if any JS tools added)
+node_modules/
+
+# Python specific
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Backup files
+*.bak
+*.backup
+*~

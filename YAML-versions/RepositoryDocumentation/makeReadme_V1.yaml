@@ -1,0 +1,66 @@
+task: GenerateRepositoryDocumentation
+source:
+  type: code_repository
+  access_method: contextual_analysis
+  instruction: Analyze the entire repository to gather necessary information.
+outputs:
+- file_type: README
+  file_name: README.md
+  delivery_format: raw_markdown_code
+  content_structure:
+  - section_id: 1
+    title: Brief Description
+    content_source: repository_analysis
+    instruction: Generate a concise summary of the project's purpose and functionality.
+  - section_id: 2
+    title: How It Works
+    content_source: code_logic_analysis
+    instruction: Explain the core mechanics and workflow of the project.
+  - section_id: 3
+    title: Setup and Run
+    content_source: dependency_and_script_analysis
+    instruction: Provide clear, step-by-step instructions for installation, configuration,
+      and execution.
+  - section_id: 4
+    title: Project Structure
+    display_format: collapsible_dropdown_heading
+    content:
+      type: directory_tree
+      generation_method: automated_scan
+  - section_id: 5
+    title: Extra Details
+    content_source: repository_analysis
+    is_optional: true
+    instruction: Include any additional relevant information, such as configuration
+      options or advanced usage.
+  - section_id: 6
+    title: Credits
+    content_source: dependency_analysis
+    instruction: List all third-party libraries, frameworks, and assets used, with
+      links if possible.
+  - section_id: 7
+    title: Owner Details
+    content_source: user_or_api_data
+    data_points:
+    - type: full_name
+      format: PlainText
+    - type: github_profile_link
+      format: Hyperlink
+- file_type: LICENSE
+  file_name: LICENSE
+  content_generation_rules:
+    task: SuggestAndGenerateLicense
+    input_parameter:
+      name: publicity_level
+      description: User's desired level of openness, permissiveness, and commercial
+        use for the project.
+      query_to_user: How public do you want the repository to be (e.g., fully open,
+        open with attribution, restricted commercial use)?
+    action: Based on the user's response, select the most appropriate standard license
+      (e.g., MIT, GPL, Apache 2.0) and generate the full license text.
+global_constraints:
+  final_output_wrapper: none
+  response_content_type: code_only
+  allow_prose_response: false
+  instruction: The final response must only contain the raw code for the requested
+    markdown files and nothing else.
