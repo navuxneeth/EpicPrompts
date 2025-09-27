@@ -9,10 +9,12 @@ A curated collection of meticulously crafted AI prompts designed to work beautif
 ## 🚀 Quick Start
 
 1. **Browse the collection** below to find prompts that suit your needs
-2. **Choose your format**: JSON for precise structure, YAML for readability
+2. **Choose your format**: JSON for precise structure, YAML for readability  
 3. **Copy the prompt** from the appropriate directory
 4. **Paste into your AI tool** and customize as needed
 5. **Create amazing content** with consistent, high-quality results!
+
+📖 **New to prompting?** Check out our [practical examples](EXAMPLES.md) with step-by-step usage guides!
 
 ## 🎯 What's Inside
 
@@ -36,6 +38,8 @@ These prompts are designed for high-token count, multimodal models (default Temp
 * Other similar advanced consumer-scale multimodal Generative AI tools
 
 ## 📚 Featured Prompts
+
+> 💡 **Tip**: See [EXAMPLES.md](EXAMPLES.md) for detailed usage instructions and practical workflows!
 
 ### Image Generation
 
@@ -179,7 +183,8 @@ Here is an overview of the current project structure:
 │   ├── optimizedTopics_V1.json
 │   ├── syncReadme_V1.json
 │   ├── syncReadme_V2.json
-│   └── syncReadme_V3.json
+│   ├── syncReadme_V3.json
+│   └── syncReadme_V4.json
 ├── SequentialAudioTranscription/  # Audio processing prompts
 │   └── SAT_V1.json
 ├── SetExecutionPolicy/        # Meta-instruction prompts
@@ -192,12 +197,12 @@ Here is an overview of the current project structure:
 │   │   ├── optimizedTopics_V1.yaml
 │   │   ├── syncReadme_V1.yaml
 │   │   ├── syncReadme_V2.yaml
-│   │   └── syncReadme_V3.yaml
+│   │   ├── syncReadme_V3.yaml
+│   │   └── syncReadme_V4.yaml
 │   ├── SequentialAudioTranscription/
 │   │   └── SAT_V1.yaml
 │   └── SetExecutionPolicy/
 │       └── SEP_V1.yaml
-└── syncReadme_V2.json         # Legacy file (to be organized)
 ```
 
 ### 🏗️ Structure Conventions

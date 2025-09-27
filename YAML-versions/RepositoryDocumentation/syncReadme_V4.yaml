@@ -1,0 +1,71 @@
+task: ComprehensiveReadmeSynchronization
+objective: To perform a deep and thorough analysis of a code repository, comparing
+  its file structure, dependencies, setup procedures, and core code functionality
+  against the existing README.md. The goal is to meticulously update the README to
+  reflect all detected changes, ensuring a complete and accurate representation of
+  the project's current state.
+parameters:
+  analysis_depth: exhaustive
+  instruction: Go beyond surface-level file checks. Analyze file contents to understand
+    functional changes.
+source:
+  type: code_repository
+  components_to_analyze:
+  - item: file_and_directory_structure
+    purpose: To map the current project architecture.
+  - item: content_of_all_source_code_files
+    purpose: To identify changes in logic, new functions/classes, and deprecated features.
+  - item: dependency_manifest_files
+    examples:
+    - package.json
+    - requirements.txt
+    - pom.xml
+    - build.gradle
+    purpose: To track the addition or removal of third-party libraries.
+  - item: build_and_setup_scripts
+    examples:
+    - Dockerfile
+    - Makefile
+    - package.json scripts
+    purpose: To verify the accuracy of installation and execution instructions.
+  - item: existing_readme.md
+    purpose: To serve as the baseline for comparison and updating.
+processing_logic:
+  action: Multi-LayeredDifferentialAnalysis
+  description: A sequential comparison across multiple layers of the project to ensure
+    no changes are missed.
+  layers_of_comparison:
+  - layer: 1
+    name: StructuralDiff
+    description: Detects new, removed, or moved files and directories.
+  - layer: 2
+    name: DependencyDiff
+    description: Compares the libraries listed in the README against the actual dependencies.
+  - layer: 3
+    name: InstructionalDiff
+    description: Validates the setup/run commands in the README against build scripts.
+  - layer: 4
+    name: FunctionalDiff
+    description: Analyzes the abstract syntax tree (AST) or content of modified source
+      files to find significant changes to functionality that should be documented.
+modification_rules:
+  primary_directive: PreserveAndEnhance
+  description: Maintain the document's original structure and style while precisely
+    integrating updates.
+  constraints:
+    structural_immutability: true
+    stylistic_consistency: true
+  update_triggers_and_actions:
+  - trigger: Structural change detected
+    action: Update the project's file tree or structural diagrams.
+  - trigger: Dependency change detected
+    action: Add or remove libraries from the 'Installation' or 'Credits' sections.
+  - trigger: Instructional change detected
+    action: Correct the commands or steps in the 'Setup and Run' section.
+  - trigger: Significant functional change detected
+    action: Update the 'How it Works' or relevant feature description to reflect the
+      new or modified behavior.
+output:
+  file_name: README.md
+  format: markdown
+  delivery_format: raw_markdown_code_with_changes_annotated
