@@ -1,0 +1,51 @@
+task: SequentialAudioTranscriptionWithMetadataExtraction
+source:
+  type: file_attachment_collection
+  description: An array containing an unspecified number of audio files to be transcribed.
+  files:
+  - file_id: <system_provided_file_identifier_1>
+  - file_id: <system_provided_file_identifier_2>
+  - file_id: '...'
+parameters:
+  processing_strategy:
+    mode: sequential
+    order: one_by_one
+  metadata_extraction:
+    enabled: true
+    source: audio_content
+    fields_to_extract:
+    - field_name: gender
+      on_not_found: leaveBlank
+    - field_name: age
+      on_not_found: leaveBlank
+    - field_name: name
+      on_not_found: leaveBlank
+  transcription_rules:
+    fidelity: verbatim_plus
+    include_disfluencies: true
+    include_pauses: true
+    multilingual_handling:
+      policy: transcribe_and_translate
+      translation_target: English
+      translation_format: inline_parentheses
+      example: OriginalWord (EnglishTranslation)
+  output_formatting:
+    titling:
+      is_required: true
+      style: uniform
+      template: Transcript_[person's name]_[OriginalFileName]_[gender]_[age]
+      source_for_template_variables:
+        OriginalFileName: file_metadata
+        gender: extracted_metadata
+        age: extracted_metadata
+  constraints:
+    priority: quality_over_speed
+    accuracy: research_grade
+    hallucination: strictly_prohibited
+    context_persistence: full_session
+  resource_management:
+    on_token_limit_reach:
+      action: notify_user_and_pause
+      continuation_trigger: user_command
+metadata:
+  purpose: Academic Research
