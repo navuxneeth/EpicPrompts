@@ -1,0 +1,95 @@
+Primary Font:
+
+"VT323", monospace
+Local font definition:
+CSS
+@font-face {
+  font-family: 'VT323';
+  src: url('./assets/VT323-Regular.ttf') format('truetype');
+}
+Use in CSS:
+CSS
+font-family: 'VT323', monospace;
+Download link:
+VT323-Regular.ttf (local asset)
+Or Google Fonts:
+VT323 on Google Fonts
+How to use in HTML:
+
+HTML
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+<style>
+  body { font-family: 'VT323', monospace; }
+</style>
+2. Colors
+2.1 Light Original Theme ("PixelOS")
+Theme definition:
+Source: pixel-focus-os.html#L122
+
+Variable	Value
+bg	#283238
+text	#B6C2BF
+card	#38454C
+accent	#6AB0A2
+accent-hover	#548C7F
+How to use in CSS:
+
+CSS
+:root {
+  --color-bg: #283238;
+  --color-text: #B6C2BF;
+  --color-card: #38454C;
+  --color-accent: #6AB0A2;
+  --color-accent-hover: #548C7F;
+}
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'VT323', monospace;
+}
+.card {
+  background: var(--color-card);
+}
+.button {
+  background: var(--color-accent);
+}
+.button:hover {
+  background: var(--color-accent-hover);
+}
+2.2 Blue Theme ("Ocean")
+Theme definition:
+Source: pixel-focus-os.html#L125
+
+Variable	Value
+bg	#1a3a4a
+text	#a6c3d1
+card	#2a5b74
+accent	#4aa9d5
+accent-hover	#3b87ab
+
+
+CSS
+:root {
+  --color-bg: #1a3a4a;
+  --color-text: #a6c3d1;
+  --color-card: #2a5b74;
+  --color-accent: #4aa9d5;
+  --color-accent-hover: #3b87ab;
+}
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'VT323', monospace;
+}
+.card {
+  background: var(--color-card);
+}
+.button {
+  background: var(--color-accent);
+}
+.button:hover {
+  background: var(--color-accent-hover);
+}
+
+VT323-Regular.ttf (local)
+VT323 on Google Fonts
