@@ -105,7 +105,7 @@ A collection of prompts to generate and maintain documentation for a code reposi
 [Access Folder](./RepositoryDocumentation/)
 </details>
 
-### UI/UX Design (Pixel 8-bit ASCII Style)
+### UI Design (Pixel 8-bit ASCII Style)
 
 <details>
 <summary><b>Pixel8BitButtonDesign -design</b></summary>
@@ -233,18 +233,9 @@ We welcome contributions from the community! Here's how you can help:
 4. Submit a pull request with our template
 
 ## 📊 Repository Stats
-- 📁 **Prompt Categories**: 6 main categories (Image Generation, Text Processing, Audio Processing, Technical Tasks, Creative Writing, UI/UX Design)
+- 📁 **Prompt Categories**: 6 main categories (Image Generation, Text Processing, Audio Processing, Technical Tasks, Creative Writing, UI Design)
 - 📄 **Total Prompts**: 13+ unique prompts  
 - 🔧 **Formats**: JSON + YAML versions
-- ✅ **Validation**: Automated quality checks
-- 🤝 **Contributors**: Growing community
-
-## 🎉 Recognition
-
-Special thanks to all contributors who help make EpicPrompts better! Contributors are recognized in:
-- Repository contributor list
-- Individual prompt credits
-- Community showcase (coming soon)
 
 ## 📁 File Structure
 
