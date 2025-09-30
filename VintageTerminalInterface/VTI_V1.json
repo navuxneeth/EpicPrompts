@@ -1,0 +1,356 @@
+{
+  "task": "VintageTerminalInterface",
+  "description": "Design complete terminal-style user interfaces with authentic vintage computing aesthetics, emulating classic command-line interfaces, BBS systems, and early text-based operating systems. Perfect for developer tools, retro applications, and nostalgic computing experiences.",
+  "parameters": {
+    "terminalStyle": {
+      "aestheticInfluences": [
+        "Classic Unix/Linux terminals",
+        "DOS command prompt",
+        "VT100/VT220 terminals",
+        "BBS (Bulletin Board System) interfaces",
+        "Mainframe terminals",
+        "Early microcomputer systems",
+        "Hacker/cyberpunk terminals"
+      ],
+      "visualCharacteristics": {
+        "display": "Full-screen text-based interface",
+        "background": "Dark, solid colors (no gradients)",
+        "text": "Monospaced font, phosphor-like glow",
+        "cursor": "Blinking block, underscore, or vertical bar",
+        "scrolling": "Line-by-line, terminal-style output",
+        "borders": "ASCII box-drawing or simple lines"
+      }
+    },
+    "colorSchemes": {
+      "GreenPhosphor": {
+        "background": "#000000",
+        "text": "#00FF00",
+        "textDim": "#008800",
+        "accent": "#00FF00",
+        "cursor": "#00FF00",
+        "selection": "#004400",
+        "description": "Classic monochrome green terminal"
+      },
+      "AmberMonitor": {
+        "background": "#1a0f00",
+        "text": "#FFB000",
+        "textDim": "#AA7700",
+        "accent": "#FFD700",
+        "cursor": "#FFB000",
+        "selection": "#553300",
+        "description": "Warm amber CRT display"
+      },
+      "BlueIBM": {
+        "background": "#000080",
+        "text": "#AAAAAA",
+        "textDim": "#666666",
+        "accent": "#FFFFFF",
+        "cursor": "#FFFFFF",
+        "selection": "#000044",
+        "description": "IBM PC DOS blue screen"
+      },
+      "PixelOSDark": {
+        "background": "#283238",
+        "text": "#B6C2BF",
+        "textDim": "#6B7876",
+        "accent": "#6AB0A2",
+        "cursor": "#6AB0A2",
+        "selection": "#38454C",
+        "description": "Modern retro hybrid"
+      },
+      "OceanDepth": {
+        "background": "#1a3a4a",
+        "text": "#a6c3d1",
+        "textDim": "#5a7380",
+        "accent": "#4aa9d5",
+        "cursor": "#4aa9d5",
+        "selection": "#2a5b74",
+        "description": "Deep ocean theme"
+      },
+      "Cyberpunk": {
+        "background": "#0a0e27",
+        "text": "#00ffff",
+        "textDim": "#008888",
+        "accent": "#ff00ff",
+        "cursor": "#00ffff",
+        "selection": "#1a1e37",
+        "description": "Neon cyberpunk aesthetic"
+      }
+    },
+    "typography": {
+      "primaryFont": "VT323, monospace",
+      "alternatives": [
+        "Courier New",
+        "Consolas",
+        "Monaco",
+        "Menlo",
+        "Source Code Pro",
+        "IBM Plex Mono"
+      ],
+      "characterSet": "ASCII (7-bit) or Extended ASCII (8-bit)",
+      "sizing": {
+        "default": "16-18px for readability",
+        "large": "20-24px for headers",
+        "small": "14px for metadata"
+      },
+      "spacing": {
+        "letterSpacing": "0 (natural monospace)",
+        "lineHeight": "1.5-1.8 for comfortable reading",
+        "characterWidth": "Fixed width for column alignment"
+      }
+    },
+    "interfaceComponents": {
+      "commandPrompt": {
+        "structure": "user@host:path$ or C:\\> style",
+        "elements": [
+          "Username display",
+          "Hostname or system name",
+          "Current directory path",
+          "Prompt character ($ # > %)",
+          "Blinking cursor"
+        ],
+        "examples": [
+          "user@terminal:~$ ",
+          "C:\\USERS\\ADMIN> ",
+          "root@system:/home# ",
+          "[user@localhost ~]$ "
+        ]
+      },
+      "outputArea": {
+        "characteristics": "Scrolling text display",
+        "features": [
+          "Line numbers (optional)",
+          "Timestamps for entries",
+          "Color coding for different message types",
+          "ASCII art banners or logos",
+          "Progress indicators"
+        ],
+        "formatting": {
+          "success": "Green text or ✓ symbol",
+          "error": "Red text or ✗ symbol",
+          "warning": "Yellow text or ! symbol",
+          "info": "Cyan text or i symbol"
+        }
+      },
+      "statusBar": {
+        "position": "Top or bottom of screen",
+        "content": [
+          "System name or version",
+          "Current time/date",
+          "Network status",
+          "User information",
+          "Resource usage (CPU, RAM)"
+        ],
+        "style": "Inverted colors or bordered section",
+        "example": "┌───────────────────────────────────────────────────┐\n│ SYSTEM v2.0 │ 2024-01-15 14:32:11 │ ONLINE │ 42% │\n└───────────────────────────────────────────────────┘"
+      },
+      "menuSystem": {
+        "types": [
+          "Horizontal menu bar",
+          "Numbered menu options",
+          "Keyboard shortcut menus",
+          "Context-sensitive menus"
+        ],
+        "navigation": "Number keys, arrow keys, or letter shortcuts",
+        "display": "ASCII borders or simple separators",
+        "example": "╔══════════════════════════════════════╗\n║           MAIN MENU                  ║\n╠══════════════════════════════════════╣\n║  1. New Session                      ║\n║  2. Load Data                        ║\n║  3. Settings                         ║\n║  4. Exit                             ║\n╚══════════════════════════════════════╝"
+      },
+      "inputFields": {
+        "types": [
+          "Single-line text input",
+          "Multi-line text area",
+          "Password field (masked)",
+          "Selection prompt (y/n)",
+          "Number input"
+        ],
+        "indicators": [
+          "Input prompt: >",
+          "Cursor position: _",
+          "Field boundaries: [ ]",
+          "Character count: (50/100)"
+        ],
+        "validation": "Inline error messages or color changes"
+      },
+      "dialogBoxes": {
+        "style": "ASCII-bordered modal boxes",
+        "types": [
+          "Confirmation dialogs (Yes/No)",
+          "Alert messages",
+          "Input prompts",
+          "Progress displays",
+          "Error messages"
+        ],
+        "example": "╔═══════════════════════════════╗\n║                               ║\n║  Delete this file?            ║\n║                               ║\n║  [Y] Yes    [N] No    [C] Cancel ║\n║                               ║\n╚═══════════════════════════════╝"
+      }
+    },
+    "visualEffects": {
+      "CRTEffects": {
+        "scanlines": {
+          "description": "Horizontal lines across display",
+          "implementation": "Repeating gradient overlay",
+          "intensity": "Subtle, 5-10% opacity"
+        },
+        "phosphorGlow": {
+          "description": "Soft glow around text",
+          "implementation": "Text-shadow with blur",
+          "color": "Same as text color"
+        },
+        "screenCurvature": {
+          "description": "Slight barrel distortion",
+          "implementation": "CSS transform or SVG filter",
+          "amount": "Subtle, barely noticeable"
+        },
+        "flickering": {
+          "description": "Occasional brightness variation",
+          "implementation": "Random opacity animation",
+          "frequency": "Rare, adds authenticity"
+        }
+      },
+      "textEffects": {
+        "blinkingCursor": {
+          "style": "Block, underscore, or vertical bar",
+          "rate": "500-1000ms interval",
+          "implementation": "CSS animation or JavaScript"
+        },
+        "typewriterEffect": {
+          "description": "Character-by-character text reveal",
+          "speed": "50-100ms per character",
+          "usage": "Initial boot messages or important output"
+        },
+        "glitchEffect": {
+          "description": "Brief text distortion or color shift",
+          "triggers": "Errors, system events, or random",
+          "duration": "50-200ms"
+        }
+      },
+      "animations": {
+        "bootSequence": {
+          "elements": [
+            "ASCII art logo",
+            "System initialization messages",
+            "Component loading progress",
+            "Memory check display",
+            "Login prompt"
+          ],
+          "timing": "Sequential, line-by-line output"
+        },
+        "loadingIndicators": [
+          "Spinning: | / - \\",
+          "Progress bar: [====----]",
+          "Dots: ... (expanding)",
+          "Blocks: ░▒▓█ (filling)",
+          "Percentage: 0% ... 100%"
+        ]
+      }
+    },
+    "interactionPatterns": {
+      "commandEntry": {
+        "behavior": "Type command, press Enter to execute",
+        "features": [
+          "Command history (up/down arrows)",
+          "Tab completion",
+          "Command suggestions",
+          "Multi-line input support",
+          "Copy/paste functionality"
+        ]
+      },
+      "navigation": {
+        "keyboard": {
+          "arrows": "Navigate menus or cursor",
+          "tab": "Switch between fields",
+          "enter": "Confirm/execute",
+          "esc": "Cancel/go back",
+          "pageUp/pageDown": "Scroll output",
+          "ctrl+C": "Interrupt process"
+        },
+        "mouse": {
+          "clicking": "Select menu items (optional)",
+          "scrolling": "View output history",
+          "selection": "Highlight text for copying"
+        }
+      },
+      "feedback": {
+        "visual": [
+          "Color changes for states",
+          "Cursor position changes",
+          "Highlighted selections",
+          "Flashing alerts"
+        ],
+        "textual": [
+          "Status messages",
+          "Error descriptions",
+          "Success confirmations",
+          "Help text"
+        ],
+        "sound": "Optional system beeps (ASCII bell character)"
+      }
+    },
+    "specialFeatures": {
+      "ASCIIArt": {
+        "usage": [
+          "Application logos/banners",
+          "Section dividers",
+          "Icons or illustrations",
+          "Progress visualizations",
+          "Decorative elements"
+        ],
+        "tools": "Text-to-ASCII converters, hand-drawn ASCII",
+        "limitations": "Works best with limited character sets"
+      },
+      "boxDrawing": {
+        "characters": "─ │ ┌ ┐ └ ┘ ├ ┤ ┬ ┴ ┼ ═ ║ ╔ ╗ ╚ ╝",
+        "usage": [
+          "Windows and panels",
+          "Borders and frames",
+          "Tables and grids",
+          "Dividers and separators"
+        ]
+      },
+      "dataVisualization": {
+        "charts": "ASCII bar charts, histograms",
+        "graphs": "Line plots using characters",
+        "tables": "Aligned columns with borders",
+        "trees": "Hierarchical structures with connectors"
+      }
+    },
+    "responsiveConsiderations": {
+      "desktopTerminal": {
+        "size": "80x24 or 120x40 character grid (classic sizes)",
+        "features": "Full feature set, all effects enabled"
+      },
+      "mobileTerminal": {
+        "size": "Smaller character grid, vertical scrolling",
+        "adaptations": [
+          "On-screen keyboard optimizations",
+          "Larger tap targets for menus",
+          "Simplified effects for performance",
+          "Swipe gestures for navigation"
+        ]
+      }
+    },
+    "accessibilityFeatures": {
+      "screenReaders": "Announce terminal output in reading mode",
+      "highContrast": "Ensure sufficient color contrast (7:1 ideal)",
+      "fontScaling": "Support browser zoom without breaking layout",
+      "keyboardOnly": "Full functionality without mouse",
+      "focusIndicators": "Clear focus states for keyboard navigation",
+      "reducedMotion": "Disable animations when requested",
+      "alternativeText": "Describe ASCII art for screen readers"
+    }
+  },
+  "usageInstructions": "Use this prompt to design authentic vintage terminal interfaces. Specify the terminal style (Unix/DOS/BBS/Cyberpunk), color scheme preference, required components (command prompt/menu/status bar), and any special features (boot sequence/ASCII art). The output will be a comprehensive terminal interface design combining nostalgic aesthetics with modern usability and accessibility standards.",
+  "compatibility": [
+    "Web terminals (xterm.js, terminal.js)",
+    "HTML/CSS/JavaScript implementations",
+    "React terminal components",
+    "Electron applications",
+    "Terminal emulators (iTerm2, Windows Terminal)",
+    "Command-line applications",
+    "Claude (for code generation)",
+    "ChatGPT (for code generation)"
+  ],
+  "examples": {
+    "input": "Design a Unix-style terminal interface with green phosphor color scheme, including a command prompt, status bar showing system info, and a boot sequence animation",
+    "expectedOutput": "Full terminal interface with:\n- Black background (#000000) with bright green text (#00FF00)\n- Top status bar: ┌───────────────────────────────────────┐\n                  │ SYSTEM v3.2 | 2024-01-15 | ONLINE   │\n                  └───────────────────────────────────────┘\n- ASCII art logo on startup\n- Sequential boot messages: 'Initializing...', 'Loading modules...', 'System ready'\n- Command prompt: user@terminal:~$ with blinking cursor\n- VT323 monospace font\n- Subtle phosphor glow effect on text\n- CRT scanlines at 7% opacity"
+  }
+}

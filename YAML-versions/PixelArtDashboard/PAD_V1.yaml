@@ -1,0 +1,245 @@
+task: PixelArtDashboard
+description: Design comprehensive dashboard interfaces in pixel art style, combining
+  retro gaming aesthetics with modern data visualization. Perfect for analytics platforms,
+  admin panels, and monitoring systems with a nostalgic twist.
+parameters:
+  dashboardStyle:
+    overallAesthetic:
+    - Retro gaming HUD
+    - 8-bit pixel art
+    - Vintage terminal display
+    - Classic arcade interface
+    - Nostalgic computer interface
+    - Pixel-perfect design system
+    layoutStructure:
+      grid: Modular grid system (4-column, 8-column, or 12-column)
+      spacing: 8px or 16px grid units for pixel-perfect alignment
+      containers: Card-based layout with pixel borders
+      hierarchy: Clear visual hierarchy using size and color
+  componentTypes:
+  - component: Stat Cards
+    purpose: Display key metrics and KPIs
+    design:
+      border: Thick pixel borders (2-3px)
+      header: Large pixelated numbers or icons
+      label: Small monospace text below
+      decoration: Optional corner decorations or icons
+      example: '┌─────────────┐
+
+        │  9,432      │
+
+        │  Users      │
+
+        └─────────────┘'
+  - component: Charts and Graphs
+    purpose: Visualize data trends
+    design:
+      barChart: Pixel-perfect bars with ASCII labels
+      lineChart: Stepped or pixelated lines, no smooth curves
+      pieChart: Segmented circles with hard edges
+      sparklines: Mini pixelated trend indicators
+      axes: ASCII grid lines and labels
+  - component: Progress Bars
+    purpose: Show completion or capacity
+    design:
+      style: Filled blocks with border
+      indicators: Percentage text or ASCII segments
+      variants: Health bar style, loading bar, capacity meter
+      example: '[████████----] 67%'
+  - component: Tables
+    purpose: Display structured data
+    design:
+      borders: ASCII box-drawing characters
+      headers: Bold or colored header row
+      alternatingRows: Subtle background color differences or dithering
+      sorting: Arrow indicators (↑↓) in headers
+      example: '╔══════╦════════╦════════╗
+
+        ║ Name ║ Status ║ Score  ║
+
+        ╠══════╬════════╬════════╣
+
+        ║ John ║ Active ║ 1,234  ║
+
+        ╚══════╩════════╩════════╝'
+  - component: Status Indicators
+    purpose: Show system status or alerts
+    design:
+      icons: Pixel art symbols (✓ ✗ ! ◆)
+      colors: Green for success, red for error, yellow for warning
+      animation: Blinking or pulsing for alerts
+      badges: Pixel count indicators on icons
+  - component: Mini Maps or Visualizations
+    purpose: Spatial or network data representation
+    design:
+      style: Top-down or isometric pixel art
+      legend: ASCII color key
+      interaction: Hover tooltips with pixel styling
+  colorScheme:
+    PixelOS:
+      background: '#283238'
+      surface: '#38454C'
+      text: '#B6C2BF'
+      textSecondary: '#6B7876'
+      accent: '#6AB0A2'
+      accentHover: '#548C7F'
+      success: '#5FC67A'
+      warning: '#F5C842'
+      error: '#E8625A'
+      info: '#4AA9D5'
+    Ocean:
+      background: '#1a3a4a'
+      surface: '#2a5b74'
+      text: '#a6c3d1'
+      textSecondary: '#5a7380'
+      accent: '#4aa9d5'
+      accentHover: '#3b87ab'
+      success: '#44d988'
+      warning: '#ffd84d'
+      error: '#ff5757'
+      info: '#6ac3ff'
+    RetroMonitor:
+      background: '#0f0f0f'
+      surface: '#1a1a1a'
+      text: '#00ff00'
+      textSecondary: '#008800'
+      accent: '#00ffff'
+      accentHover: '#00cccc'
+      success: '#00ff00'
+      warning: '#ffff00'
+      error: '#ff0000'
+      info: '#00ffff'
+  typography:
+    primaryFont: VT323, monospace
+    fallback: Courier New, Consolas, monospace
+    sizes:
+      hero: 48px (large stat numbers)
+      heading: 24-32px (section titles)
+      body: 16-18px (regular text)
+      caption: 12-14px (labels and metadata)
+    alignment: Left-aligned for readability, right-aligned for numbers
+    casing: ALL CAPS for headers, mixed case for content
+  layoutPatterns:
+    standardDashboard:
+      structure: Header > Stats Row > Main Content Grid > Footer
+      headerElements:
+      - Logo/Title (pixel art)
+      - Navigation menu (ASCII style)
+      - User info or settings icon
+      - Notifications indicator
+      mainContent:
+      - 4 stat cards across top
+      - 2-3 column layout for charts
+      - Table or list view at bottom
+      - Sidebar for filters or quick actions
+    gamingHUD:
+      structure: Corner-anchored elements like game overlay
+      elements:
+      - 'Top-left: Stats and resources'
+      - 'Top-right: Mini-map or notifications'
+      - 'Bottom-left: Actions or inventory'
+      - 'Bottom-right: Chat or log'
+      - 'Center: Main content area (clear)'
+    terminalStyle:
+      structure: Full-screen terminal emulation
+      elements:
+      - Command prompt header
+      - Scrolling log/output area
+      - Stats in sidebar
+      - Input command line at bottom
+      - All borders using ASCII characters
+  dataVisualization:
+    chartStyles:
+      bars: Solid filled rectangles, no gradients
+      lines: Stepped or pixelated paths
+      areas: Filled with dithering patterns
+      dots: Small squares or circles
+      labels: Rotated text or abbreviated
+      legends: Boxed with colored squares
+    animationEffects:
+      dataEntry: Frame-by-frame growth animation
+      updates: Flash or color pulse on change
+      transitions: Instant or stepped, no easing
+      loading: Pixel spinner or scanning line
+  interactiveElements:
+    filters:
+      style: Dropdown menus or button groups
+      appearance: Pixel button styling
+      feedback: Border color change on selection
+    tooltips:
+      style: ASCII bordered box
+      positioning: Follow cursor or anchored to element
+      content: Monospace text with icons
+      example: '╔═══════════╗
+
+        ║ Value: 42 ║
+
+        ╚═══════════╝'
+    modals:
+      style: Centered box with thick border
+      backdrop: Dithered or semi-transparent overlay
+      animation: Slide in from top or instant appear
+      closeButton: X or [CLOSE] button in corner
+  responsiveDesign:
+    desktop:
+      layout: Full grid with all components visible
+      charts: Large detailed visualizations
+      spacing: Comfortable padding and margins
+    tablet:
+      layout: 2-column grid, some stacking
+      charts: Simplified with fewer data points
+      navigation: Collapsed or hamburger menu
+    mobile:
+      layout: Single column vertical scroll
+      cards: Full-width stat cards
+      charts: Simplified sparklines or mini charts
+      tables: Horizontal scroll or card view
+  specialEffects:
+    CRTScanlines:
+      description: Horizontal lines overlay for CRT monitor effect
+      implementation: Repeating linear gradient or CSS pseudo-element
+      opacity: 5-10% for subtle effect
+    phosphorGlow:
+      description: Soft glow around text and elements
+      implementation: Text-shadow or box-shadow
+      color: Same as text color, blurred
+    pixelNoise:
+      description: Subtle animated noise for screen texture
+      implementation: Small animated GIF or CSS animation
+      intensity: Very low, barely noticeable
+    screenFlicker:
+      description: Occasional brightness variation
+      implementation: Keyframe animation on opacity
+      frequency: Rare, random intervals
+  accessibilityRequirements:
+    contrast: WCAG AA compliant minimum (4.5:1 for text)
+    focusStates: Clear pixel-border focus indicators
+    keyboardNav: Full keyboard navigation for all controls
+    screenReaders: ARIA labels and semantic HTML structure
+    textScaling: Support for browser zoom up to 200%
+    colorBlindness: Don't rely solely on color for information
+    animations: Respect prefers-reduced-motion setting
+usageInstructions: Use this prompt to design complete dashboard interfaces in pixel
+  art style. Specify the dashboard purpose (analytics/admin/monitoring), preferred
+  color scheme, required components (stats/charts/tables), and layout preference.
+  The output will be a cohesive, pixel-perfect dashboard design combining retro aesthetics
+  with modern data visualization best practices.
+compatibility:
+- DALL-E 3 (for mockups)
+- Midjourney (for mockups)
+- Figma (for implementation)
+- HTML/CSS/JavaScript
+- React Dashboard Libraries
+- Vue Dashboard Libraries
+- Chart.js (with custom styling)
+- D3.js (with pixel art rendering)
+examples:
+  input: Design an analytics dashboard with 4 stat cards, a line chart showing user
+    growth, and a recent activity table using the PixelOS color scheme in retro gaming
+    HUD style
+  expectedOutput: 'Complete dashboard layout with: Top row of 4 stat cards with thick
+    pixel borders showing Users (9,432), Revenue ($45.2K), Conversion (3.4%), Active
+    (127). Below that, a pixelated line chart with stepped lines showing growth over
+    6 months. Bottom section with ASCII-bordered table showing recent user activities.
+    All using #283238 background, #B6C2BF text, #6AB0A2 accents, VT323 font, and gaming
+    HUD corner elements.'

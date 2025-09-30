@@ -29,6 +29,7 @@ This repository contains structured prompts in both **JSON** and **YAML** format
 | 🎵 **Audio Processing** | Transcription, metadata extraction | Media processing, accessibility |
 | 🛠️ **Technical Tasks** | Code generation, system administration | Development, automation |
 | 🎭 **Creative Writing** | Storytelling, character development | Fiction, creative content |
+| 🎨 **UI/UX Design** | Pixel art, ASCII interfaces, retro styling | Retro-themed applications, vintage gaming interfaces |
 
 ### Compatibility
 
@@ -104,6 +105,87 @@ A collection of prompts to generate and maintain documentation for a code reposi
 [Access Folder](./RepositoryDocumentation/)
 </details>
 
+### UI/UX Design (Pixel 8-bit ASCII Style)
+
+<details>
+<summary><b>Pixel8BitButtonDesign -design</b></summary>
+
+Design UI button components in authentic 8-bit pixel art style, reminiscent of classic retro computing and gaming interfaces.
+
+**When to use:**
+* Creating retro-themed web applications, vintage gaming interfaces, or nostalgic digital experiences
+* Designing button systems with authentic pixel art aesthetics
+
+**What to provide:**
+* Button text, type (primary/secondary/danger/success), and color scheme preference
+
+[Access Folder](./Pixel8BitButtonDesign/)
+</details>
+
+<details>
+<summary><b>RetroPixelIconography -design</b></summary>
+
+Design comprehensive pixel art icon sets in authentic 8-bit style, capturing the essence of early computing and gaming era graphics.
+
+**When to use:**
+* Creating icon systems for retro-themed applications
+* Designing pixel-perfect icons at 16x16px or 32x32px resolution
+* Building consistent iconography with limited color palettes
+
+**What to provide:**
+* Icon category (system/action/navigation/status/media), canvas size, and color scheme
+
+[Access Folder](./RetroPixelIconography/)
+</details>
+
+<details>
+<summary><b>ASCIINavigationMenu -design</b></summary>
+
+Design navigation menus using ASCII art characters and pixel-art styling, creating authentic terminal-style interfaces.
+
+**When to use:**
+* Building retro-themed navigation systems
+* Creating BBS-style or DOS-style menu interfaces
+* Designing text-based user interface components
+
+**What to provide:**
+* Menu type (horizontal/vertical/dropdown/breadcrumb/tabs), style preference (DOS/BBS/Terminal/Gaming), and menu items
+
+[Access Folder](./ASCIINavigationMenu/)
+</details>
+
+<details>
+<summary><b>PixelArtDashboard -design</b></summary>
+
+Design comprehensive dashboard interfaces in pixel art style, combining retro gaming aesthetics with modern data visualization.
+
+**When to use:**
+* Creating analytics platforms with nostalgic aesthetics
+* Building admin panels or monitoring systems with retro flair
+* Designing data-rich interfaces with pixel art styling
+
+**What to provide:**
+* Dashboard purpose (analytics/admin/monitoring), required components (stats/charts/tables), and layout preference
+
+[Access Folder](./PixelArtDashboard/)
+</details>
+
+<details>
+<summary><b>VintageTerminalInterface -design</b></summary>
+
+Design complete terminal-style user interfaces with authentic vintage computing aesthetics, emulating classic command-line interfaces and BBS systems.
+
+**When to use:**
+* Creating developer tools with retro terminal styling
+* Building command-line style web applications
+* Designing nostalgic computing experiences with CRT effects
+
+**What to provide:**
+* Terminal style (Unix/DOS/BBS/Cyberpunk), color scheme, required components (command prompt/menu/status bar), and special features
+
+[Access Folder](./VintageTerminalInterface/)
+</details>
+
 UNLESS: The model name is specifically mentioned in the directory name ("modelName" + "_" + "directoryName")
 
 ## 🛠️ Tools & Validation
@@ -151,8 +233,8 @@ We welcome contributions from the community! Here's how you can help:
 4. Submit a pull request with our template
 
 ## 📊 Repository Stats
-- 📁 **Prompt Categories**: 4 main categories
-- 📄 **Total Prompts**: 8+ unique prompts  
+- 📁 **Prompt Categories**: 6 main categories (Image Generation, Text Processing, Audio Processing, Technical Tasks, Creative Writing, UI/UX Design)
+- 📄 **Total Prompts**: 13+ unique prompts  
 - 🔧 **Formats**: JSON + YAML versions
 - ✅ **Validation**: Automated quality checks
 - 🤝 **Contributors**: Growing community
@@ -176,8 +258,14 @@ Here is an overview of the current project structure:
 ├── CONTRIBUTING.md            # Contribution guidelines
 ├── LICENSE                    # MIT License
 ├── README.md                  # This file
+├── ASCIINavigationMenu/       # UI/UX: ASCII-style navigation menus
+│   └── ANM_V1.json
 ├── EtherealVintageBloom/      # Image generation prompts
 │   └── EVB_V1.json
+├── Pixel8BitButtonDesign/     # UI/UX: 8-bit style button components
+│   └── PBD_V1.json
+├── PixelArtDashboard/         # UI/UX: Retro gaming-style dashboards
+│   └── PAD_V1.json
 ├── RepositoryDocumentation/   # Documentation generation prompts
 │   ├── makeReadme_V1.json
 │   ├── optimizedTopics_V1.json
@@ -185,13 +273,23 @@ Here is an overview of the current project structure:
 │   ├── syncReadme_V2.json
 │   ├── syncReadme_V3.json
 │   └── syncReadme_V4.json
+├── RetroPixelIconography/     # UI/UX: Pixel art icon design
+│   └── RPI_V1.json
 ├── SequentialAudioTranscription/  # Audio processing prompts
 │   └── SAT_V1.json
 ├── SetExecutionPolicy/        # Meta-instruction prompts
 │   └── SEP_V1.json
+├── VintageTerminalInterface/  # UI/UX: Terminal-style interfaces
+│   └── VTI_V1.json
 ├── YAML-versions/             # YAML format alternatives
+│   ├── ASCIINavigationMenu/
+│   │   └── ANM_V1.yaml
 │   ├── EtherealVintageBloom/
 │   │   └── EVB_V1.yaml
+│   ├── Pixel8BitButtonDesign/
+│   │   └── PBD_V1.yaml
+│   ├── PixelArtDashboard/
+│   │   └── PAD_V1.yaml
 │   ├── RepositoryDocumentation/
 │   │   ├── makeReadme_V1.yaml
 │   │   ├── optimizedTopics_V1.yaml
@@ -199,10 +297,14 @@ Here is an overview of the current project structure:
 │   │   ├── syncReadme_V2.yaml
 │   │   ├── syncReadme_V3.yaml
 │   │   └── syncReadme_V4.yaml
+│   ├── RetroPixelIconography/
+│   │   └── RPI_V1.yaml
 │   ├── SequentialAudioTranscription/
 │   │   └── SAT_V1.yaml
-│   └── SetExecutionPolicy/
-│       └── SEP_V1.yaml
+│   ├── SetExecutionPolicy/
+│   │   └── SEP_V1.yaml
+│   └── VintageTerminalInterface/
+│       └── VTI_V1.yaml
 ```
 
 ### 🏗️ Structure Conventions

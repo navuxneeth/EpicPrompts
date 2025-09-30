@@ -1,0 +1,100 @@
+task: Pixel8BitButtonDesign
+description: Generate UI button components in authentic 8-bit pixel art style, reminiscent
+  of classic retro computing and gaming interfaces. Perfect for nostalgic web applications,
+  retro-themed games, and vintage terminal-inspired interfaces.
+parameters:
+  visualStyle:
+    aesthetic:
+    - Retro 8-bit
+    - Pixel Art
+    - ASCII-inspired
+    - Low-resolution charm
+    - Nostalgia-driven
+    - Authentic vintage computing
+    colorScheme:
+      primary:
+        bg: '#283238'
+        text: '#B6C2BF'
+        card: '#38454C'
+        accent: '#6AB0A2'
+        accentHover: '#548C7F'
+      secondary:
+        bg: '#1a3a4a'
+        text: '#a6c3d1'
+        card: '#2a5b74'
+        accent: '#4aa9d5'
+        accentHover: '#3b87ab'
+    typography:
+      font: VT323, monospace
+      style: Monospaced, bitmap-style
+      characteristics: Pixelated, chunky letterforms with authentic CRT terminal appearance
+  buttonStates:
+    default:
+      border: Thick pixel border (2-3px), sharp corners
+      shadow: Hard drop shadow or none, no gradients
+      texture: Flat color fills, possible dithering patterns
+      animation: None or instant state changes
+    hover:
+      effect: Color shift to accent-hover, possible pixel shimmer effect
+      transition: Instant or stepped animation (no smooth transitions)
+      feedback: Border color change or simple glow effect
+    active:
+      effect: Inverted colors or pressed-down appearance with shadow removal
+      displacement: 1-2px downward shift to simulate button press
+    disabled:
+      appearance: Reduced contrast, dithered pattern, or muted colors
+      interaction: No hover effects, cursor indicates non-clickable state
+  designElements:
+    borders:
+      style: Thick, pixelated outlines
+      corners: Sharp 90-degree angles, no border-radius
+      thickness: 2-4px minimum for visibility
+    spacing:
+      padding: Generous internal padding (8-16px)
+      margin: Grid-aligned spacing (multiples of 4 or 8px)
+      alignment: Pixel-perfect grid alignment
+    decoration:
+      icons: Simple geometric shapes or ASCII characters
+      patterns: Dithering, checkerboard, or scanline effects
+      effects: CRT scanlines, phosphor glow, or pixelated noise
+  buttonVariants:
+  - type: primary
+    usage: Main call-to-action buttons
+    appearance: Bold accent colors, high contrast
+  - type: secondary
+    usage: Supporting actions
+    appearance: Outline style or muted colors
+  - type: danger
+    usage: Destructive actions
+    appearance: Red tones (#ff4444 or similar pixel-era red)
+  - type: success
+    usage: Confirmation actions
+    appearance: Green tones (#44ff44 or similar pixel-era green)
+  technicalConstraints:
+    resolution: Design at low resolution then scale up (16x16, 32x32 base)
+    colorDepth: Limited palette (16-256 colors maximum)
+    antialiasing: Disabled - pure pixel edges only
+    shadows: Hard shadows only, no blur or gradients
+    animations: Frame-by-frame or stepped, no smooth easing
+  accessibilityConsiderations:
+    contrast: Ensure WCAG AA compliance despite retro aesthetic
+    focusStates: Clear pixel-art focus indicators (dotted borders, color shifts)
+    textSize: Minimum readable size despite pixelated font
+    colorBlindness: Test with different color vision deficiencies
+usageInstructions: Use this prompt to generate pixel-perfect 8-bit style button designs.
+  Specify the button text, type (primary/secondary/etc.), and any specific color preferences.
+  The output will maintain authentic retro computing aesthetics while ensuring modern
+  usability standards. Ideal for retro-themed applications, vintage gaming interfaces,
+  and nostalgic web experiences.
+compatibility:
+- DALL-E 3
+- Midjourney
+- Stable Diffusion
+- Claude (for code generation)
+- ChatGPT (for code generation)
+examples:
+  input: Create a primary action button with text 'START GAME' in pixel 8-bit style
+    using the PixelOS color scheme
+  expectedOutput: 'A rectangular button with thick pixel borders, VT323 font, accent
+    color (#6AB0A2) background, sharp corners, and proper hover state with color shift
+    to #548C7F'

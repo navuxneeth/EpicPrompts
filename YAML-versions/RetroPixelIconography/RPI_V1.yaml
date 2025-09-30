@@ -1,0 +1,145 @@
+task: RetroPixelIconography
+description: Design pixel art icons and iconography systems in authentic 8-bit style,
+  capturing the essence of early computing and gaming era graphics. Perfect for retro
+  application interfaces, vintage-themed websites, and nostalgic digital experiences.
+parameters:
+  iconStyle:
+    visualAesthetic:
+    - Classic 8-bit pixel art
+    - Isometric pixel design
+    - Top-down pixel sprites
+    - Side-view pixel art
+    - Monochromatic ASCII art
+    - Limited color palette
+    gridSystem:
+      baseResolution: 16x16px or 32x32px canvas
+      scalingMethod: Nearest-neighbor (no blur)
+      alignment: Pixel-perfect grid snapping
+      exportSizes: 16x, 24x, 32x, 48x multiples
+    colorPalette:
+      PixelOS:
+        background: '#283238'
+        foreground: '#B6C2BF'
+        accent1: '#6AB0A2'
+        accent2: '#548C7F'
+        neutral: '#38454C'
+      Ocean:
+        background: '#1a3a4a'
+        foreground: '#a6c3d1'
+        accent1: '#4aa9d5'
+        accent2: '#3b87ab'
+        neutral: '#2a5b74'
+      maxColors: 4-8 colors per icon for authentic retro feel
+  iconCategories:
+  - category: System Icons
+    examples:
+    - Settings (gear/cog)
+    - User profile (pixelated avatar)
+    - Notifications (bell with pixels)
+    - Search (magnifying glass)
+    - Menu (hamburger or grid)
+    characteristics: Highly recognizable, minimal detail, clear silhouettes
+  - category: Action Icons
+    examples:
+    - Save (floppy disk)
+    - Delete (trash can or X)
+    - Edit (pencil or pen)
+    - Copy/Paste (overlapping documents)
+    - Download/Upload (arrows)
+    characteristics: Action-oriented, universally understood symbols
+  - category: Navigation Icons
+    examples:
+    - Arrow directions (up/down/left/right)
+    - Home (pixelated house)
+    - Back/Forward (chevrons)
+    - Close (X)
+    - Expand/Collapse (plus/minus)
+    characteristics: Directional clarity, simple geometry
+  - category: Status Icons
+    examples:
+    - Success (checkmark)
+    - Error (X or !)
+    - Warning (triangle with !)
+    - Info (lowercase i)
+    - Loading (pixel spinner)
+    characteristics: Instantly communicative, distinct shapes
+  - category: Media Icons
+    examples:
+    - Play/Pause (triangles/bars)
+    - Volume (speaker with waves)
+    - Music (note)
+    - Image (mountain silhouette)
+    - Video (camera/film)
+    characteristics: Media-specific, recognizable at small sizes
+  designPrinciples:
+    clarity:
+      rule: Each icon must be recognizable at 16x16px
+      approach: Simplify to essential shapes only
+      testing: View at actual size on various displays
+    consistency:
+      strokeWeight: 1-2px consistent thickness
+      style: Same perspective across icon set
+      spacing: Uniform padding within canvas
+      detailLevel: Matched complexity across set
+    distinctiveness:
+      silhouette: Unique shape for each icon
+      contrast: High contrast against backgrounds
+      spacing: Clear visual separation between elements
+    scalability:
+      baseSize: Design at smallest size first
+      scaling: Only integer multiples (2x, 3x, 4x)
+      sharpness: Maintain crisp pixel edges at all sizes
+  technicalSpecifications:
+    pixelArtRules:
+    - No anti-aliasing or smoothing
+    - Pure pixel edges - no sub-pixel rendering
+    - Dithering patterns for shading (optional)
+    - Limited color count (4-16 colors max)
+    - Clear pixel boundaries
+    - No gradients - use color steps instead
+    fileFormats:
+      working: PNG with transparency
+      export: SVG with pixel-perfect scaling
+      sprite: PNG sprite sheets for efficiency
+      code: CSS/Unicode for simple ASCII icons
+    animationGuidelines:
+      frameRate: 6-12 frames per second for authentic feel
+      transitions: Stepped, no easing
+      looping: Seamless loops for loading/processing
+      examples: Spinning pixels, blinking cursors, scanning lines
+  contextualUsage:
+    monochromeMode:
+      description: Single color icons on contrasting background
+      useCase: Minimal interfaces, terminal-style UIs
+      examples: ASCII-style line art icons
+    colorMode:
+      description: Limited palette with accent colors
+      useCase: Rich retro interfaces, gaming UIs
+      examples: Classic game-style icons with shading
+    isometricMode:
+      description: 3D-looking icons in isometric perspective
+      useCase: Strategy game UIs, architectural apps
+      examples: Buildings, objects in 2:1 pixel ratio
+  accessibilityRequirements:
+    contrast: Minimum 4.5:1 contrast ratio with background
+    alternativeText: Clear alt text for screen readers
+    tooltips: Hover tooltips for unclear icons
+    sizing: Minimum 24x24px touch target for interactive icons
+    stateIndicators: Visual feedback for hover/active/disabled states
+usageInstructions: Use this prompt to design comprehensive pixel art icon sets. Specify
+  the icon category, desired style (monochrome/color/isometric), canvas size, and
+  color scheme preference. The output will be pixel-perfect icons optimized for retro-themed
+  interfaces while maintaining modern usability and accessibility standards.
+compatibility:
+- DALL-E 3
+- Midjourney
+- Stable Diffusion
+- Aseprite (pixel art tool)
+- Photoshop (with pixel grid)
+- Figma (with pixel grid plugin)
+examples:
+  input: Create a set of 5 system icons (settings, profile, notifications, search,
+    menu) in 32x32px pixel art style using the Ocean color scheme
+  expectedOutput: 'Five distinct pixel art icons on 32x32px canvas, using colors from
+    Ocean palette (#1a3a4a, #a6c3d1, #4aa9d5, #3b87ab, #2a5b74), with consistent 2px
+    stroke weight, clear silhouettes, and no anti-aliasing'
