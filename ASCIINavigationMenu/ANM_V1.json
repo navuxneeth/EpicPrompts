@@ -1,0 +1,207 @@
+{
+  "task": "ASCIINavigationMenu",
+  "description": "Design navigation menus using ASCII art characters and pixel-art styling, creating authentic terminal-style interfaces reminiscent of early computing BBS systems, DOS applications, and text-based user interfaces.",
+  "parameters": {
+    "menuStyle": {
+      "visualAesthetic": [
+        "Terminal-inspired",
+        "Text-based interface",
+        "ASCII art decorations",
+        "Box-drawing characters",
+        "Monospaced alignment",
+        "Retro computing nostalgia"
+      ],
+      "layoutTypes": [
+        {
+          "type": "Horizontal Menu Bar",
+          "structure": "Top-aligned menu with ASCII separators",
+          "example": "[ HOME ] | [ ABOUT ] | [ PRODUCTS ] | [ CONTACT ]"
+        },
+        {
+          "type": "Vertical Sidebar",
+          "structure": "Left or right-aligned vertical menu",
+          "example": "┌──────────┐\n│ > HOME   │\n│   ABOUT  │\n│   BLOG   │\n└──────────┘"
+        },
+        {
+          "type": "Dropdown Menu",
+          "structure": "Expandable ASCII box menus",
+          "example": "╔═══════════╗\n║ File ▼    ║\n╠═══════════╣\n║ New       ║\n║ Open      ║\n║ Save      ║\n╚═══════════╝"
+        },
+        {
+          "type": "Breadcrumb Trail",
+          "structure": "Path-style navigation",
+          "example": "HOME >> PRODUCTS >> ELECTRONICS >> COMPUTERS"
+        },
+        {
+          "type": "Tab Navigation",
+          "structure": "Tab-style interface",
+          "example": "[====TAB1====] [====TAB2====] [====TAB3====]"
+        }
+      ]
+    },
+    "ASCIICharacterSet": {
+      "boxDrawing": {
+        "single": "─ │ ┌ ┐ └ ┘ ├ ┤ ┬ ┴ ┼",
+        "double": "═ ║ ╔ ╗ ╚ ╝ ╠ ╣ ╦ ╩ ╬",
+        "rounded": "─ │ ╭ ╮ ╰ ╯",
+        "usage": "Creating menu borders and containers"
+      },
+      "decorative": {
+        "arrows": "→ ← ↑ ↓ ► ◄ ▲ ▼ » « > <",
+        "bullets": "• ◆ ■ □ ○ ● ▪ ▫",
+        "indicators": "✓ ✗ ★ ☆ + - * ~",
+        "usage": "Menu item prefixes and state indicators"
+      },
+      "separators": {
+        "vertical": "| ¦ │ ║",
+        "horizontal": "- = _ ─ ═",
+        "compound": ":: // \\\\ || == --",
+        "usage": "Dividing menu sections"
+      },
+      "selectors": {
+        "active": "> • ► [X] ■",
+        "inactive": "  ○ □ [ ]",
+        "hover": "→ » * ▶",
+        "usage": "Indicating current/selected menu items"
+      }
+    },
+    "colorScheme": {
+      "PixelOS": {
+        "background": "#283238",
+        "text": "#B6C2BF",
+        "textMuted": "#6B7876",
+        "accent": "#6AB0A2",
+        "accentHover": "#548C7F",
+        "border": "#38454C"
+      },
+      "Ocean": {
+        "background": "#1a3a4a",
+        "text": "#a6c3d1",
+        "textMuted": "#5a7380",
+        "accent": "#4aa9d5",
+        "accentHover": "#3b87ab",
+        "border": "#2a5b74"
+      },
+      "Monochrome": {
+        "background": "#000000",
+        "text": "#00FF00",
+        "textMuted": "#008800",
+        "accent": "#00FF00",
+        "accentHover": "#00CC00",
+        "border": "#008800"
+      }
+    },
+    "typography": {
+      "font": "VT323, Courier New, monospace",
+      "size": "16px-20px for readability",
+      "weight": "Normal (pixelated fonts typically don't have weights)",
+      "letterSpacing": "Monospaced - natural spacing",
+      "lineHeight": "1.5-2.0 for comfortable reading"
+    },
+    "interactiveStates": {
+      "default": {
+        "appearance": "Plain text with optional border",
+        "decoration": "No special indicators"
+      },
+      "hover": {
+        "effects": [
+          "Background color change to accent",
+          "Text color inversion",
+          "Arrow or bullet appears before item",
+          "Brackets around text: [ ITEM ]",
+          "Underline with ASCII: ═══════"
+        ],
+        "transition": "Instant or stepped animation"
+      },
+      "active": {
+        "effects": [
+          "Different selector character (> or ►)",
+          "Bold or bright color",
+          "Double borders: ║ ITEM ║",
+          "Background highlight",
+          "Blinking cursor effect (optional)"
+        ]
+      },
+      "disabled": {
+        "effects": [
+          "Muted text color (50% opacity or darker shade)",
+          "Strike-through: ─ITEM─",
+          "Different character: - ITEM (grayed)",
+          "Dithered pattern background"
+        ]
+      }
+    },
+    "menuBehaviors": {
+      "expansion": {
+        "dropdown": "Submenu appears below parent with ASCII box",
+        "flyout": "Submenu appears to right/left with connecting characters",
+        "accordion": "Vertical expansion with + / - indicators",
+        "animation": "Character-by-character reveal or instant display"
+      },
+      "navigation": {
+        "keyboard": "Arrow keys navigate, Enter selects",
+        "mouse": "Click to select, hover for preview",
+        "touch": "Tap to select, adequate spacing for finger targets"
+      },
+      "feedback": {
+        "loading": "Animated ASCII spinner or dots: [....] [o...] [.o..] [..o.] [...o]",
+        "confirmation": "Checkmark appears: ✓ SAVED",
+        "error": "X or error message: ✗ ERROR",
+        "progress": "ASCII progress bar: [████----] 50%"
+      }
+    },
+    "designPatterns": {
+      "classicDOS": {
+        "characteristics": "Blue background, light text, single-line borders",
+        "example": "╔═══════════════════════════╗\n║  File  Edit  View  Help   ║\n╚═══════════════════════════╝"
+      },
+      "BBSStyle": {
+        "characteristics": "ANSI art, block graphics, vibrant colors",
+        "example": "▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n█ MAIN MENU      █\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀"
+      },
+      "TerminalMinimal": {
+        "characteristics": "Simple text, minimal decoration, functional",
+        "example": "$ home | about | contact"
+      },
+      "RetroGaming": {
+        "characteristics": "Chunky borders, pixel decorations, bright colors",
+        "example": "┏━━━━━━━━━━━━┓\n┃ ★ START ★  ┃\n┗━━━━━━━━━━━━┛"
+      }
+    },
+    "responsiveConsiderations": {
+      "mobile": {
+        "layout": "Convert horizontal to hamburger menu",
+        "hamburgerIcon": "≡ or ☰ (ASCII approximation)",
+        "touchTargets": "Minimum 44x44px tap areas",
+        "spacing": "Increased padding for touch interfaces"
+      },
+      "desktop": {
+        "layout": "Full horizontal menu or sidebar",
+        "hoverEffects": "Enhanced hover states with ASCII decorations",
+        "shortcuts": "Display keyboard shortcuts (Ctrl+S, F1, etc.)"
+      }
+    },
+    "accessibilityFeatures": {
+      "screenReaders": "Proper ARIA labels and semantic HTML",
+      "keyboardNav": "Full keyboard navigation support",
+      "focusIndicators": "Clear ASCII-style focus rectangles",
+      "contrast": "High contrast text (WCAG AA minimum)",
+      "skipLinks": "Skip to content option for screen readers",
+      "textAlternatives": "Alt text for decorative ASCII elements"
+    }
+  },
+  "usageInstructions": "Use this prompt to design ASCII-art navigation menus for retro-themed web applications or terminal-style interfaces. Specify the menu type (horizontal/vertical/dropdown), style preference (DOS/BBS/Terminal/Gaming), color scheme, and menu items. The output will be a pixel-perfect, accessible navigation system with authentic retro aesthetics and modern usability.",
+  "compatibility": [
+    "HTML/CSS implementations",
+    "React components",
+    "Vue components",
+    "Terminal applications",
+    "Claude (for code generation)",
+    "ChatGPT (for code generation)",
+    "Text-based UI frameworks"
+  ],
+  "examples": {
+    "input": "Create a horizontal navigation menu in DOS style with items: HOME, PRODUCTS, ABOUT, CONTACT using the PixelOS color scheme",
+    "expectedOutput": "╔════════════════════════════════════════════╗\n║  [ HOME ]  [ PRODUCTS ]  [ ABOUT ]  [ CONTACT ]  ║\n╚════════════════════════════════════════════╝\nWith background #283238, text #B6C2BF, accent highlighting on hover #6AB0A2, and VT323 monospace font"
+  }
+}
