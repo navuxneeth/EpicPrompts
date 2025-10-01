@@ -1,0 +1,9 @@
+Example 1: Design a gaming analytics dashboard showing player statistics (score, level, achievements) with large pixelated numbers, retro-style bar charts for progress tracking, and pixel art character avatars, all in a dark theme with neon green and cyan accents.
+
+Example 2: Create a server monitoring dashboard in pixel art style displaying system metrics (CPU, RAM, disk usage) with animated pixel art status indicators, ASCII-bordered data tables showing active processes, and retro terminal-style alert notifications.
+
+Example 3: Generate an e-commerce admin panel with pixel-styled components including daily sales statistics, a pixelated line graph showing revenue trends over time, a customer activity feed with sprite-based icons, and navigation with 8-bit buttons.
+
+Example 4: Design a retro-themed social media analytics dashboard featuring follower count displays with large pixel numbers, engagement metrics visualized as pixel art pie charts, a feed of recent posts with thumbnail-style pixel borders, and color-coded status badges.
+
+Example 5: Create a cyberpunk-styled network operations center dashboard with pixel art world map showing connection nodes, real-time traffic data in animated pixel graphs, terminal-style command panels with monospaced text, and flashing pixel indicators for system alerts.

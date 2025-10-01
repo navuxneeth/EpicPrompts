@@ -1,0 +1,9 @@
+Example 1: Create a primary action button with the text "START GAME" in 8-bit pixel art style, using a retro green color scheme reminiscent of old CRT monitors, with a thick border and drop shadow.
+
+Example 2: Design a set of navigation buttons (Home, About, Contact, Shop) in secondary blue color variant, each button with pixel-perfect spacing and hover states that show a color shift and subtle pixel shimmer effect.
+
+Example 3: Generate a danger/destructive action button labeled "DELETE DATA" in red pixel art style with an inverted color active state and a 1-2px downward shift when pressed to simulate a button press.
+
+Example 4: Create a success confirmation button saying "LEVEL UP!" in bright green with celebratory pixel sparkle effects and a disabled state variant that shows reduced opacity and grayed-out colors.
+
+Example 5: Design a loading button with the text "CONNECTING..." that includes a simple pixel-art animated spinner or dots, maintaining the authentic 8-bit aesthetic with stepped frame animation rather than smooth transitions.

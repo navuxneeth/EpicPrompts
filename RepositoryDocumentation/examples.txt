@@ -1,0 +1,9 @@
+Example 1: Use makeReadme_V1.json to generate a complete README.md and LICENSE for a new Python web application by uploading your project files, specifying that you want the repository to be fully open source with MIT license, and letting the AI analyze the Flask framework dependencies, route structure, and database models.
+
+Example 2: Apply syncReadme_V1.json to update an existing README.md after adding three new API endpoints and removing deprecated functions, so the file structure section and API documentation reflect the current state of your Node.js backend.
+
+Example 3: Use syncReadme_V2.json for a comprehensive documentation update after a major refactor where you migrated from JavaScript to TypeScript, updated multiple dependencies, and restructured the project folders, ensuring every section including setup instructions and build commands are synchronized.
+
+Example 4: Generate optimized documentation topics using optimizedTopics_V1.json to create focused sections about authentication flow, database schema design, and deployment procedures for your repository's wiki pages.
+
+Example 5: Apply syncReadme_V4.json after implementing new environment variables, Docker containerization, and CI/CD pipelines to ensure the README accurately reflects all new configuration options, setup requirements, and deployment workflows.

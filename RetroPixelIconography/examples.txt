@@ -1,0 +1,9 @@
+Example 1: Create a system icon set in 16x16px resolution for a file manager application, including icons for folders (open and closed), various file types (text, image, executable), and system folders (trash, downloads, documents), using a 4-color CGA palette.
+
+Example 2: Design a set of action icons at 32x32px for a retro-styled text editor, including save (floppy disk), open (folder), cut (scissors), copy (double pages), paste (clipboard), undo (curved arrow), and redo icons, with a limited 8-color EGA palette.
+
+Example 3: Generate navigation icons in pixel art style for a vintage BBS-themed website, including home (house), back arrow, forward arrow, up arrow, refresh (circular arrows), search (magnifying glass), and menu (hamburger) icons at 24x24px resolution.
+
+Example 4: Create a set of status indicator icons showing different notification states: info (lowercase 'i' in circle), warning (exclamation mark in triangle), error (X in circle), success (checkmark), and progress (animated spinning dots or hourglass) in classic DOS colors.
+
+Example 5: Design a media control icon set in 16x16px for a pixel art music player, including play (right triangle), pause (double bars), stop (square), next track (double right triangles), previous track (double left triangles), volume controls, and shuffle/repeat icons with NES-era color constraints.

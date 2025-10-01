@@ -1,0 +1,9 @@
+Example 1: Create a Unix-style terminal interface in classic green-on-black color scheme for a developer portfolio website, featuring a command prompt that accepts commands like "ls" to list projects, "cat about.txt" to show bio, and "help" to display available commands, with a blinking cursor and character-by-character typing animation.
+
+Example 2: Design a DOS-style terminal interface with the iconic blue background and white text for a retro-themed file management web application, including a menu bar with keyboard shortcuts (Alt+F for File, Alt+E for Edit), ASCII box-drawing borders, and function key indicators at the bottom (F1=Help, F10=Exit).
+
+Example 3: Generate a BBS-style colored ANSI terminal interface for an online community platform with vibrant cyan, magenta, and yellow text, ASCII art logo header, menu navigation using number keys (1. Messages, 2. Forums, 3. Chat, 4. Files), and a scrollable content area showing recent activity.
+
+Example 4: Create a cyberpunk-themed terminal interface with neon green text on dark background, CRT scanline effects, phosphor glow, and slight screen curve for a hacker-style web game, featuring matrix-style cascading text animations, status panels showing "system access level," and interactive command input for puzzle-solving.
+
+Example 5: Design a terminal-style admin dashboard with a split-screen layout showing live server logs in one pane (auto-scrolling with timestamps), a command input area for system administration tasks, a status bar displaying system metrics (CPU, RAM, Network), and keyboard shortcuts for quick navigation between panels.
