@@ -1,0 +1,9 @@
+Example 1: Upload five interview audio files from a research study and use the prompt to transcribe each one sequentially, extracting interviewee names, ages, and genders, resulting in organized transcripts titled like "Transcript_Sarah_Johnson_interview1.mp3_female_34" for easy reference and analysis.
+
+Example 2: Process a collection of multilingual podcast episodes where speakers occasionally use Spanish or French phrases, getting transcriptions that preserve the original language with English translations in parentheses, like "Me llamo (My name is) Juan" while capturing speaker metadata.
+
+Example 3: Transcribe a series of corporate meeting recordings with multiple speakers, having the AI identify and extract available information about each participant (names mentioned during introductions, estimated gender from voice characteristics) and create separate sections or timestamps for different speakers.
+
+Example 4: Use the prompt to transcribe academic lecture recordings where the professor's name is mentioned, extracting this information along with speech patterns including pauses, filler words like "um" and "uh", and verbal corrections to maintain the authentic nature of spoken discourse for linguistic analysis.
+
+Example 5: Process customer service call recordings by uploading multiple audio files, getting detailed transcriptions that include both agent and customer speech with metadata extraction, pauses and hesitations marked, and titles formatted for easy database organization and quality assurance review.

@@ -1,0 +1,9 @@
+Example 1: Before asking the AI to analyze a 200-page research paper and extract all methodologies, findings, and statistical significance, first use SetExecutionPolicy to establish that you need research-grade accuracy, comprehensive understanding, and are willing to wait for thorough processing rather than quick summaries.
+
+Example 2: When starting a complex code refactoring project that involves analyzing thousands of lines across multiple files, apply SetExecutionPolicy first to ensure the AI maintains full context awareness throughout the entire codebase review and prioritizes correctness over completion speed.
+
+Example 3: Use SetExecutionPolicy before requesting the AI to generate comprehensive documentation for a large software project, emphasizing that you want exhaustive detail, no hallucinated features, and persistent understanding of the entire project structure rather than section-by-section processing that might lose context.
+
+Example 4: Apply this prompt before conducting a detailed literature review where the AI needs to analyze multiple academic papers, compare methodologies, identify patterns, and synthesize findings, ensuring it takes the necessary time to fully comprehend each source and maintain awareness of all previously analyzed materials.
+
+Example 5: Before asking the AI to design a complete system architecture for a complex application with multiple microservices, databases, and integration points, use SetExecutionPolicy to establish that you need thorough analysis of all requirements, dependencies, and edge cases with zero tolerance for oversimplifications or missing considerations.

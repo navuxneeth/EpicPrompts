@@ -1,0 +1,9 @@
+Example 1: Create a horizontal DOS-style menu bar with separators for a retro website navigation with items: Home, About, Services, Portfolio, and Contact.
+
+Example 2: Design a vertical sidebar navigation menu in BBS style with box-drawing characters for a developer tool application, including sections for Dashboard, Projects, Settings, Documentation, and Logout.
+
+Example 3: Generate a dropdown menu system in terminal style for a file management interface with main menu items (File, Edit, View, Tools, Help) and nested submenu items under each category.
+
+Example 4: Create a breadcrumb navigation trail in classic ASCII style showing the path: Home >> Products >> Electronics >> Computers >> Laptops with appropriate arrow separators.
+
+Example 5: Design a tab navigation interface using ASCII characters for a multi-section admin panel with tabs: Overview, Analytics, Users, Content, and System Settings, with one tab marked as active.
